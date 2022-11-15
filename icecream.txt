@@ -1,0 +1,19 @@
+Hello! My name is Craig.
+I enjoy the following ice cream flavors:
+# delete all but your TOP THREE flavors in this list
+Vanilla
+Chocolate
+Cookie Dough
+
+Shopkeeper : [Homer has agreed to purchase a Krusty doll for Bart's birthday]  Take this object, but beware it carries a terrible curse!
+Homer : Ooh, that's bad.
+Shopkeeper : But it comes with a free frogurt!
+Homer : That's good.
+Shopkeeper : The frogurt is also cursed.
+Homer : That's bad.
+Shopkeeper : But you get your choice of toppings.
+Homer : That's good!
+Shopkeeper : The toppings contain potassium benzoate.
+[Homer looks puzzled]
+Shopkeeper : ...That's bad.
+Homer : Can I go now?
