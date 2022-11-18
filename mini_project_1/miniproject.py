@@ -47,7 +47,7 @@ def main():
 
 
             if value_check <= 10:
-                neutral_good = "You are guided by your conscience, rather than any formal laws or traditions. You may occasionally break the rules, but it’s generally in service of the greater good.\n"
+                neutral_good = "You do good for goodness' sake, rather than being directed to by laws or by whim. You may obey the law or break it when you felt it would server a greater good. Your need to help others and reduce suffering takes precedence over all else.\n"
 
                 print("You Got: Neutral Good!\n")
                 wrapper = textwrap.TextWrapper(width=70)
@@ -57,7 +57,7 @@ def main():
                 print("\nYour spirit character is Albus Dumbledore from Harry Potter\n")
 
             elif value_check <= 21:
-                true_neutral = "You don’t feel strongly about much of anything. Frankly, you can take or leave a lot of things in your life. You’re mostly guided by instinct, rather than conscious decision.\n"
+                true_neutral = "You don't seem to have prejudice or compulsion. You either disregard any commitment to good, evil, law, and chaos, or belive that a balance is needed between these forces in the world. You simply do what seems natural to you, without feelings with regard to good versus evil, or order versus chaos.\n"
 
                 print("You Got: True Neutral!\n")
                 wrapper = textwrap.TextWrapper(width=70)
@@ -67,7 +67,7 @@ def main():
                 print("\nYour spirit character Han Solo from Star Wars\n")
 
             elif value_check <= 30:
-                neutral_evil = "You see others as a means to an end. You only make friends and allies temporarily, and will turn on someone in a second if you can see a way to gain from it. You don’t really go out of your way to cause harm to others, but you don\'t really go out of your way to prevent it either.\n"
+                neutral_evil = "You see others as a means to an end. You only make friends and allies temporarily, and will turn on someone in a second if you can see a way to gain from it. You are completely out for yourself and have no love of order or law and show no remorse for those hurt by your actions.\n"
 
                 print("You Got: Neutral Evil!\n")
                 wrapper = textwrap.TextWrapper(width=70)
