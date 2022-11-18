@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
-# TODO: Play again prompt
-# TODO: seperate code into different functions
+# 
+'''
+Want to add: 
+1. Play again prompt
+2. Incorporate random: choose question randomly
+3. Increase question bank
+4. Possibly utilize os.clear() per Albert's suggestion
+'''
+
 import textwrap
 
 def main():
     counter = 0
-    value_check = 0
+    morality_check = 0
 
     # Question dictionary to pull from and plop on the user's console window
     # with choosable options in the same dicitonary
@@ -52,7 +59,7 @@ def main():
     while counter <= 5:
         # After 5 turns, the value check and determine user's alignment!
         if counter == 5:
-            if value_check <= 10:
+            if morality_check <= 10:
                 neutral_good = "You do good for goodness' sake, rather than being directed to by laws or by whim. You may obey the law or break it when you felt it would server a greater good. Your need to help others and reduce suffering takes precedence over all else.\n"
                 
                 print("You Got: Neutral Good!\n")
@@ -63,7 +70,7 @@ def main():
                     print(element)
                 print("\nYour spirit character is Albus Dumbledore from Harry Potter\n")
 
-            elif value_check <= 21:
+            elif morality_check <= 21:
                 true_neutral = "You don't seem to have prejudice or compulsion. You either disregard any commitment to good, evil, law, and chaos, or belive that a balance is needed between these forces in the world. You simply do what seems natural to you, without feelings with regard to good versus evil, or order versus chaos.\n"
 
                 print("You Got: True Neutral!\n")
@@ -74,7 +81,7 @@ def main():
                     print(element)
                 print("\nYour spirit character Han Solo from Star Wars\n")
 
-            elif value_check <= 30:
+            elif morality_check <= 30:
                 neutral_evil = "You see others as a means to an end. You only make friends and allies temporarily, and will turn on someone in a second if you can see a way to gain from it. You are completely out for yourself and have no love of order or law and show no remorse for those hurt by your actions.\n"
 
                 print("You Got: Neutral Evil!\n")
@@ -85,7 +92,7 @@ def main():
                     print(element)
                 print("\nYour spirit character is Voldemort from Harry Potter\n")
 
-            elif value_check > 30:
+            elif morality_check > 30:
                 chaotic_evil = "If there's a pot, you're going to stir it. If there's a fire, you're going to add fuel to it. If there is calm, you are going to blow it all up. If there is something on an edge of a counter, you are going to push it off."
 
                 print("You Got: Chaotic Evil!\n")
@@ -117,13 +124,13 @@ def main():
                 raise ValueError('Error: Your input should be 1, 2, or 3.')
             # Increment turn counter
             counter += 1
-            # Calculate user morality with value_check and update after every response
+            # Calculate user morality with morality_check and update after every response
             if user_select == 1:
-                value_check += 1
+                morality_check += 1
             elif user_select == 2:
-                value_check += 5
+                morality_check += 5
             elif user_select == 3:
-                value_check += 10
+                morality_check += 10
             else:
                 print("Oopsie Poopsie, something broke")
         except:
