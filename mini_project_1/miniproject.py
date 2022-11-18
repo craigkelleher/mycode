@@ -1,14 +1,7 @@
 #!/usr/bin/env python3
-# 
-'''
-Want to add: 
-1. Play again prompt
-2. Incorporate random: choose question randomly
-3. Increase question bank
-4. Possibly utilize os.clear() per Albert's suggestion
-'''
 
 import textwrap
+import os
 
 def main():
     counter = 0
@@ -44,7 +37,8 @@ def main():
     ]
     
     # Print welcome introduction to the user and clear the screen before/after
-    print ("\n" * 100)
+    os.system('clear')
+    #print ("\n" * 100)
     input('''
     #*********************************************************************#
     #   Welcome to the conclusive and definitive moral alignment quiz!    #
@@ -53,7 +47,8 @@ def main():
     #   ... And who your spirit character is!                             #
     #*********************************************************************#
     (press Enter to continue):\n''')
-    print ("\n" * 100)
+    #print ("\n" * 100)
+    os.system('clear')
 
     # Program will run until 5 questions have been answered
     while counter <= 5:
@@ -117,7 +112,8 @@ def main():
             # Prompt user for response:
             user_select = int(input("Enter: 1, 2, or 3: "))
             # Clear screen after user response
-            print ("\n" * 75)
+            #print ("\n" * 100)
+            os.system('clear')
             
             # Validate user input and raise a value error if incorrect input
             if user_select < 1 or user_select > 3:
