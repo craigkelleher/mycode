@@ -35,7 +35,7 @@ def main():
     input('''
     #*********************************************************************#
     #   Welcome to the conclusive and definitive moral alignment quiz!    #
-    #   You will be given five question_bank from the question bank       #
+    #   You will be given five questions from the question bank           #
     #   Based on how you respond, we'll find out if you are good or evil! #
     #   ... And who your spirit character is!                             #
     #*********************************************************************#
