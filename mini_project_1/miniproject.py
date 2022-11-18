@@ -61,7 +61,7 @@ while counter <= 5:
             word_list = wrapper.wrap(text=true_neutral)
             for element in word_list:
                 print(element)
-            print("\nYour spirit character is Uatu the Watcher from Marvel\n")
+            print("\nYour spirit character Han Solo from Star Wars\n")
 
         elif value_check <= 30:
             neutral_good = "You are guided by your conscience, rather than any formal laws or traditions. You may occasionally break the rules, but it’s generally in service of the greater good.\n"
@@ -71,7 +71,7 @@ while counter <= 5:
             word_list = wrapper.wrap(text=neutral_good)
             for element in word_list:
                 print(element)
-            print("\nYour spirit character is Albus Dumbledore\n")
+            print("\nYour spirit character is Albus Dumbledore from Harry Potter\n")
 
         elif value_check > 30:
             chaotic_evil = "If there's a pot, you're going to stir it. If there's a fire, you're going to add fuel to it. If there is calm, you are going to blow it all up. If there is something on an edge of a counter, you are going to push it off."
@@ -81,7 +81,7 @@ while counter <= 5:
             word_list = wrapper.wrap(text=chaotic_evil)
             for element in word_list:
                 print(element)
-            print("\nYour spirit character is Carnage from Marvel or a House Cat\n")
+            print("\nYour spirit character is a House Cat\n")
             
         else:
             print("hmm, something wrong here")
