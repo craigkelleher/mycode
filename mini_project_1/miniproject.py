@@ -99,6 +99,7 @@ def main():
             else:
                 print("hmm, something wrong here")
             break
+            
         # In the while loop, always attempt the following:
         try:
             # Output questions to the user
@@ -111,10 +112,12 @@ def main():
             # Clear screen after user response
             print ("\n" * 75)
             
-            # Calculate user morality with value_check and update after every response
+            # Validate user input and raise a value error if incorrect input
             if user_select < 1 or user_select > 3:
-                raise ValueError('Error: Your input should be 1, 2, or 3.') 
+                raise ValueError('Error: Your input should be 1, 2, or 3.')
+            # Increment turn counter
             counter += 1
+            # Calculate user morality with value_check and update after every response
             if user_select == 1:
                 value_check += 1
             elif user_select == 2:
@@ -122,7 +125,7 @@ def main():
             elif user_select == 3:
                 value_check += 10
             else:
-                print("Oopsie Poopsie, wrong input")
+                print("Oopsie Poopsie, something broke")
         except:
             print("Apologies, You must type in a whole number: 1, 2, or 3 (inclusive).")
             
