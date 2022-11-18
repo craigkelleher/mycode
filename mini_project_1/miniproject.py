@@ -10,18 +10,18 @@ question_bank = [
     "option_2":"2: Cajun tater tots.",
     "option_3":"3: Two year old McDonald's french fries that fell beneath a car seat.",},
 
-    {"question":"You lent a friend a considerable amount of money shortly before they left on an adventure. They’ve now returned with a small fortune. How do you approach the topic of the loan?",
+    {"question":"You lent a friend a huge sum of money before they left on an adventure. They’ve now returned with a small fortune. How do you approach the topic of the loan?",
     "option_1":"1: Wait until they’ve had a chance to recover from their trip before bringing it up over second breakfast.",
     "option_2":"2: No need. You had them sign a contract with clear repayment details.",
     "option_3":"3: Forcibly take the fortune, seeing it as a return on investment.",},
     
-    {"question":"You come across a scroll that allows you to cast a spell of invisibility on yourself for one day. What would you do with it?",
+    {"question":"You come across a scroll that allows you to cast a spell of invisibility on yourself for one day. What do you do with it?",
     "option_1":"1: Lock it away, its to dangerous for just anyone to find.",
     "option_2":"2: Use your newfound stealth to sneak into a bank and make off with all the money you can carry.",
-    "option_3":"3: Use the scroll to tickle Putin.",},
+    "option_3":"3: Use the scroll to tickle Vladimir Putin for a day.",},
 
-    {"question":"You witness a brutal brawl, and one of the fighters dies and is carted away. His coin purse was left behind in the commotion, and nobody but you seems to have noticed. What do you do?",
-    "option_1":"1: Attempt to find the man’s family and return the gold to them.",
+    {"question":"You witness a brawl in the streets; One of the fighters dies and is carted away. His coin purse was left behind in the commotion, and nobody but you seems to have noticed. What do you do?",
+    "option_1":"1: Attempt to find the person's family and return the gold to them.",
     "option_2":"2: Leave the coins and go about your day, its not your business.",
     "option_3":"3: Invest the coins into crypto and contemplate your fortune to be.",},
 
