@@ -16,13 +16,13 @@ def main():
         "option_3":"3: Week old McDonald's french fries that fell under a car seat.",},
 
         {"question":"You lent a friend a huge sum of money before they left on an adventure. They’ve now returned with a small fortune. How do you approach the topic of the loan?",
-        "option_1":"1: Wait until they’ve had a chance to recover from their trip before bringing it up over second breakfast.",
+        "option_1":"1: Wait until they’ve had a chance to recover from their trip before bringing it up.",
         "option_2":"2: No need. You had them sign a contract with clear repayment details.",
         "option_3":"3: Forcibly take the fortune, seeing it as a return on investment.",},
         
         {"question":"You come across a scroll that allows you to cast a spell of invisibility on yourself for one day. What do you do with it?",
         "option_1":"1: Lock it away, its to dangerous for just anyone to find.",
-        "option_2":"2: Use your newfound stealth to sneak into a bank and make off with all the money you can carry.",
+        "option_2":"2: Use your newfound stealth to sneak into a bank and make off with all the money.",
         "option_3":"3: Use the scroll to tickle your manager for a day.",},
 
         {"question":"You witness a brawl in the streets; One of the fighters dies and is carted away. His coin purse was left behind in the commotion, and nobody but you seems to have noticed. What do you do?",
