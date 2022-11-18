@@ -101,7 +101,9 @@ def main():
         # In the while loop, always attempt the following:
         try:
             # Output questions to the user
-            print(question_bank[counter]["question"] + "\n")
+            word_list = textwrap.TextWrapper(width=70).wrap(text=question_bank[counter]["question"] + "\n")
+            for element in word_list:
+                print(element)
             print(question_bank[counter]["option_1"])
             print(question_bank[counter]['option_2'])
             print(question_bank[counter]['option_3'] + "\n")
