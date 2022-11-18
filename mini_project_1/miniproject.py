@@ -59,8 +59,7 @@ def main():
                 
                 print("You Got: Neutral Good!\n")
                 # Format text string to be 70 characters wide and print to the screen
-                wrapper = textwrap.TextWrapper(width=70)
-                word_list = wrapper.wrap(text=neutral_good)
+                word_list = textwrap.TextWrapper(width=70).wrap(text=neutral_good)
                 for element in word_list:
                     print(element)
                 print("\nYour spirit character is Albus Dumbledore from Harry Potter\n")
@@ -70,8 +69,7 @@ def main():
 
                 print("You Got: True Neutral!\n")
                 # Format text string to be 70 characters wide and print to the screen
-                wrapper = textwrap.TextWrapper(width=70)
-                word_list = wrapper.wrap(text=true_neutral)
+                word_list = textwrap.TextWrapper(width=70).wrap(text=true_neutral)
                 for element in word_list:
                     print(element)
                 print("\nYour spirit character Han Solo from Star Wars\n")
@@ -81,8 +79,7 @@ def main():
 
                 print("You Got: Neutral Evil!\n")
                 # Format text string to be 70 characters wide and print to the screen
-                wrapper = textwrap.TextWrapper(width=70)
-                word_list = wrapper.wrap(text=neutral_evil)
+                word_list = textwrap.TextWrapper(width=70).wrap(text=neutral_evil)
                 for element in word_list:
                     print(element)
                 print("\nYour spirit character is Voldemort from Harry Potter\n")
@@ -92,8 +89,7 @@ def main():
 
                 print("You Got: Chaotic Evil!\n")
                 # Format text string to be 70 characters wide and print to the screen
-                wrapper = textwrap.TextWrapper(width=70)
-                word_list = wrapper.wrap(text=chaotic_evil)
+                word_list = textwrap.TextWrapper(width=70).wrap(text=chaotic_evil)
                 for element in word_list:
                     print(element)
                 print("\nYour spirit character is a House Cat\n")
