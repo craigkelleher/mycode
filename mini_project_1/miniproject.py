@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
+# TODO: Play again prompt
+# TODO: seperate code into different functions
 import textwrap
 
 def main():
     counter = 0
     value_check = 0
 
-    # question dictionary to pull from and plop on the user's console window
+    # Question dictionary to pull from and plop on the user's console window
     # with choosable options in the same dicitonary
     question_bank = [
         {"question":"Which of these potato products do you most identify with?",
@@ -34,8 +36,7 @@ def main():
         "option_3":'3: “If you can read this, you are standing on my boobs"',},
     ]
     
-    # Print welcome introduction to the user
-    # TODO: play again
+    # Print welcome introduction to the user and clear the screen before/after
     print ("\n" * 100)
     input('''
     #*********************************************************************#
@@ -47,7 +48,7 @@ def main():
     (press Enter to continue):\n''')
     print ("\n" * 100)
 
-    # program will run until 5 questions have been answered
+    # Program will run until 5 questions have been answered
     while counter <= 5:
         # After 5 turns, the value check and determine user's alignment!
         if counter == 5:
@@ -55,7 +56,7 @@ def main():
                 neutral_good = "You do good for goodness' sake, rather than being directed to by laws or by whim. You may obey the law or break it when you felt it would server a greater good. Your need to help others and reduce suffering takes precedence over all else.\n"
                 
                 print("You Got: Neutral Good!\n")
-                # format text string to be 70 characters wide and print to the screen
+                # Format text string to be 70 characters wide and print to the screen
                 wrapper = textwrap.TextWrapper(width=70)
                 word_list = wrapper.wrap(text=neutral_good)
                 for element in word_list:
@@ -66,7 +67,7 @@ def main():
                 true_neutral = "You don't seem to have prejudice or compulsion. You either disregard any commitment to good, evil, law, and chaos, or belive that a balance is needed between these forces in the world. You simply do what seems natural to you, without feelings with regard to good versus evil, or order versus chaos.\n"
 
                 print("You Got: True Neutral!\n")
-                # format text string to be 70 characters wide and print to the screen
+                # Format text string to be 70 characters wide and print to the screen
                 wrapper = textwrap.TextWrapper(width=70)
                 word_list = wrapper.wrap(text=true_neutral)
                 for element in word_list:
@@ -77,7 +78,7 @@ def main():
                 neutral_evil = "You see others as a means to an end. You only make friends and allies temporarily, and will turn on someone in a second if you can see a way to gain from it. You are completely out for yourself and have no love of order or law and show no remorse for those hurt by your actions.\n"
 
                 print("You Got: Neutral Evil!\n")
-                # format text string to be 70 characters wide and print to the screen
+                # Format text string to be 70 characters wide and print to the screen
                 wrapper = textwrap.TextWrapper(width=70)
                 word_list = wrapper.wrap(text=neutral_evil)
                 for element in word_list:
@@ -88,7 +89,7 @@ def main():
                 chaotic_evil = "If there's a pot, you're going to stir it. If there's a fire, you're going to add fuel to it. If there is calm, you are going to blow it all up. If there is something on an edge of a counter, you are going to push it off."
 
                 print("You Got: Chaotic Evil!\n")
-                # format text string to be 70 characters wide and print to the screen
+                # Format text string to be 70 characters wide and print to the screen
                 wrapper = textwrap.TextWrapper(width=70)
                 word_list = wrapper.wrap(text=chaotic_evil)
                 for element in word_list:
@@ -110,7 +111,7 @@ def main():
             # Clear screen after user response
             print ("\n" * 75)
             
-            # calculate value_check and update after every response
+            # Calculate user morality with value_check and update after every response
             if user_select < 1 or user_select > 3:
                 raise ValueError('Error: Your input should be 1, 2, or 3.') 
             counter += 1
