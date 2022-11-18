@@ -44,8 +44,6 @@ def main():
 
     while counter <= 5:
         if counter == 5:
-
-
             if value_check <= 10:
                 neutral_good = "You do good for goodness' sake, rather than being directed to by laws or by whim. You may obey the law or break it when you felt it would server a greater good. Your need to help others and reduce suffering takes precedence over all else.\n"
 
@@ -95,7 +93,7 @@ def main():
             print(question_bank[counter]["option_1"])
             print(question_bank[counter]['option_2'])
             print(question_bank[counter]['option_3'] + "\n")
-        
+            
             user_select = int(input("Enter: 1, 2, or 3: "))
             print ("\n" * 75)
 
