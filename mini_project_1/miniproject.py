@@ -31,7 +31,7 @@ def main():
         "option_2":'2: "Go Away, Im Asleep"',
         "option_3":'3: “If you can read this, you are standing on my boobs"',},
     ]
-
+    print ("\n" * 100)
     input('''
     #*********************************************************************#
     #   Welcome to the conclusive and definitive moral alignment quiz!    #
@@ -114,6 +114,6 @@ def main():
             print("Apologies, You must type in a whole number: 1, 2, or 3 (inclusive).")
         
         print(f'Total Questions Answered: {counter}\n')
-        
+
 if __name__ == "__main__":
     main()    
