@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+from flask import Flask
+import random
+
+app = Flask(__name__)
+
+
+quotes=["bewdieboop", "asdada", "124aSDAVB"]
+
+@app.route("/quotes")
+def hello_world():
+    return [random.choice(quotes)]
+    ## V2 STYLE STRING FORMATTER - return "Hello {}".format(name)
+    ## OLD STYLE STRING FORMATTER - return "Hello %s!" % name
+
+if __name__ == "__main__":
+   app.run(host="0.0.0.0", port=2224) # runs the application
+
