@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D&D Session Characters</title>
+  </head>
+  <body>
+
+      <!-- Retrieve a character's name and dynamically input it on the page -->
+      {% for character in character_info %}
+        <h1> {{character['name']}}: </h1>
+      {% endfor %}
+      {% for character in character_info %}
+
+      <!-- Show an image of the character and adjust it to be 350x350 -->
+        <img src = {{character['image']}} width= "350" height="350"></>
+      {% endfor %}
+
+      <!-- for loop to go through a character's stats and print them to the page -->
+      <h1> Here are your stats: </h1>
+        {% for key, value in character_stats.items() %}
+          <li>
+            {{ key }} : {{ value }}
+          </li>
+        {% endfor %}
+      
+      <h1> Inventory: </h1>
+      <!-- for loop to go through a character's inventory and print them to the page -->
+      {% for key in inventory %}
+        <li>
+          {{ key }}
+        </li>
+      {% endfor %}
+  </body>
+</html>
